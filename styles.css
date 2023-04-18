@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-color: #f8b281;
+    --secundary-color: #1b1b1b;
+}
+
+
+html, body{
+    height: 100%;
+}
+
+body{
+    background-color: rgba(0, 0, 0, 0.842);
+    overflow-x: hidden;
+    font-family: "argonite";
+}
+
+
+ul{
+    list-style: none;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav svg{
+    cursor: pointer;
+    z-index: 10;
+}
+
+.hero{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+section{
+    padding: 1% 5%;
+}
+
+
+@font-face {
+    font-family: "argonite";
+    src: url("./fonts/RoadRadio.ttf");
+}
+
+h2{
+    font-size: 2.5rem;
+    line-height: 125%;
+    padding: 1rem 0rem;
+}
+
+h3{
+    font-size: 1.25rem;
+    line-height: 125%;
+}
+
+.links{
+    position: absolute;
+    background: white;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: "organite", sans-serif;
+    transform: translateX(100%);
+}
+
+.links a{
+    color: var(--secundary-color);
+    font-size:2rem ;
+    text-decoration: none;
+}
+
+.logo{
+    display: flex;
+    align-items: center;   
+}
+
+
+.logo img{
+    width: 3.5rem;
+    height: auto;
+    object-fit: cover;
+}
+
+.front-page{
+    min-height: 100vh;
+    color: white;
+}
+
+.title{
+    margin-top: 22vh;
+    font-family: "argonite", sans-serif;
+    text-shadow:  0px 4px 12px rgba(0, 0, 0, 0.055);
+    text-align: center;
+}
+
+.title h1{
+    font-size: 3rem;
+}
+
+.title h2{
+    line-height: 90%;
+    font-weight: lighter;
+}
+
+.title h3{
+    color: white;
+    text-shadow:  0px 4px 12px rgba(0, 0, 0, 0.055);
+}
+
+.cta{
+    margin-top: 2rem;
+}
+
+.cta button{
+    padding: 1rem 3rem;
+    font-size: 0.95rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-family: "argonite", sans-serif;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.219);
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+
+.cta-main{
+    background-color: var(--main-color);
+    color: var(--secundary-color);
+    font-weight: bold;
+    padding: 1rem 5rem;
+    transition: all 300ms;
+}
+
+.cta-main:hover{
+    background:var(--secundary-color);
+    color: var(--main-color);
+}
+
+.cta-sec{
+    background-color: var(--secundary-color);
+    color: white;
+    padding: 1% 3%;
+    font-weight: 100;
+}
+
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    padding: 12rem 0;
+    color:  var(--main-color);
+}
+
+.skills_title{
+    margin-bottom: 0;
+}
+
+
+.skills__items {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    
+   
+}
+
+.skills__items ul {
+    list-style: none;
+    margin: 10% 15% 0 0;
+    font-size: 1.25rem;
+}
+
+
+.skills__items ul li:first-child{
+    margin-bottom: 2rem;
+}
+
+
+.about{
+    margin: auto;
+    padding: 12rem 0 5rem 0;
+    background: var(--main-color);
+}
+
+
+.about__profile {
+    width: 80%;
+    margin: auto;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about__me{
+    padding: 2rem;
+}
+
+.about__me h1{
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+
+.about__me p{
+    font-size:3em;
+}
+
+
+.about__profile img{
+    width: 30%;
+    height: auto;
+}
+
+
+
+@media screen and (max-width: 768px){
+
+    .skills_title{
+        margin-bottom: 3rem;
+    }
+
+    .skills__items {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .skills__items ul li:last-child{
+        margin-bottom: 2rem;
+    }
+    
+
+.about{
+    padding: 6rem 0 6rem 0;
+}
+
+    .about__profile {
+        width: 80%;
+        margin: auto;  
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about__profile img{
+        width: 100%;
+        height: auto;
+    }
+    
+    .about__me p{
+        font-size:2em;
+    }
+}
+    
